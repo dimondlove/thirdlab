@@ -23,4 +23,7 @@ urlpatterns = [
     path('', views.index),
     path('about/', views.about),
     path('contact/', views.contact),
+    path('tagforlist/', views.tag_for_list),
+    path('tagfordict/', views.tag_for_dict),
+    path('statfiles/', views.stat_files),
 ]

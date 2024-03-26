@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for key, value in countries.items %}
+        <p>{{ key }}: {{ value }}</p>
+    {% endfor %}
+    <p>{% now "F j, Y, f" %}</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {% for country in countries %}
+            <li>{{ country }}</li>
+            {% empty %}
+            <li>Список пуст</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <div>
+        {{ countries|join:"; " }}
+    </div>
+    <div>
+        Длина списка: {{ length }}
+    </div>
+</body>
+</html>
